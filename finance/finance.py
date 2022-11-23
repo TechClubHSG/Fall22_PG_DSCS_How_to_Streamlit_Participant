@@ -60,7 +60,7 @@ def make_multistep_target(ts, steps):
         steps (_type_): number of steps
 
     Returns:
-        _type_: Multistepped data
+        _type_: Multistepped
     """
     return pd.concat(
         {f'y_step_{i + 1}': ts.shift(-i)
